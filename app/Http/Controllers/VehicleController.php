@@ -71,5 +71,5 @@ class VehicleController extends Controller
         }
     }
 
-    // سایر متدهای CRUD را می‌توان بعداً اضافه کرد
+
 }

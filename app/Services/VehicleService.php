@@ -30,6 +30,7 @@ class VehicleService
     {
         return \App\Models\Vehicle::where('customer_id', $customerId)->where('_id', $vehicleId)->first();
         //از دستی اومدم اینو روی vehicle کوعری نوشتم و مثل بالایی از هلپر استفاده نکردم که جفتشون رو استفاده کرده باشم
+    //این کامنتو خودم نوشتم اشتباه برداشت نشه یه وقت
     }
 
         public function updateVehicle($customerId, $vehicleId, array $data)
