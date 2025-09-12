@@ -35,4 +35,14 @@ return [
         ],
     ],
 
+    'rabbitmq' => [
+        'host' => 'localhost',
+        'port' => 5672,
+        'user' => 'guest',
+        'password' => 'guest',
+        'exchange' => 'kapoot_events',
+        'exchange_type' => 'direct',
+        'queue' => 'customer_events'
+    ],
+
 ];
