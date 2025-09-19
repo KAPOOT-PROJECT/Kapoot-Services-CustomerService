@@ -38,7 +38,7 @@ class Customer extends Model
      * Scope a query to get default customer address.
      */
     #[Scope]
-    protected function default_address()
+    public function default_address()
     {
         return $this->addresses()->where('is_default', true)->first();
     }
@@ -47,7 +47,7 @@ class Customer extends Model
      * Scope a query to get primary vehicle.
      */
     #[Scope]
-    protected function primary_vehicle()
+    public function primary_vehicle()
     {
        return $this->vehicles()->where('is_primary', true)->first();
     }
